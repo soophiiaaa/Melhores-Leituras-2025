@@ -10,10 +10,6 @@
     --second-book-color: #E2EFDD;
     --third-book-background: #000000;
     --third-book-color: #E8A65B; 
-    --fourth-book-background: #A39D9D;
-    --fourth-book-color: #831919; 
-    --fifth-book-background: #AEC7D3;
-    --fifth-book-color: #F3921B; 
 }
 
 body {
@@ -79,28 +75,6 @@ div {
 }
 
 #third-book:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-
-#fourth-book {
-    background-color: var(--fourth-book-background);
-    color: var(--fourth-book-color);
-}
-
-#fourth-book:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-
-#fifth-book {
-    background-color: var(--fifth-book-background);
-    color: var(--fifth-book-color);
-}
-
-#fifth-book:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
