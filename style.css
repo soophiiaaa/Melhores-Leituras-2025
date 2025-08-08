@@ -3,11 +3,29 @@
 :root {
     --first-color: #161616;
     --skoob-color: #036EC0;
+    --background-color: #F8F9D3;
+    --first-book-background: #3C778E;
+    --first-book-color: #F6DAAB;
+    --second-book-background: #942113;
+    --second-book-color: #E2EFDD;
+    --third-book-background: #000000;
+    --third-book-color: #E8A65B; 
+    --fourth-book-background: #A39D9D;
+    --fourth-book-color: #831919; 
+    --fifth-book-background: #AEC7D3;
+    --fifth-book-color: #F3921B; 
 }
 
-* {
-    font-family: 'Poppins', 'sans-serif';
+body {
+    background-color: var(--background-color);
     color: var(--first-color);
+    font-family: 'Poppins', 'sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
 }
 
 h1, p, div {
@@ -19,6 +37,70 @@ a {
     color: var(--skoob-color);
 }
 
+div {
+    border-radius: 8px;
+    width: 700px;
+    margin: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .container {
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-book {
+    background-color: var(--first-book-background);
+    color: var(--first-book-color);
+}
+
+#first-book:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#second-book {
+    background-color: var(--second-book-background);
+    color: var(--second-book-color);
+}
+
+#second-book:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#third-book {
+    background-color: var(--third-book-background);
+    color: var(--third-book-color);
+}
+
+#third-book:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+#fourth-book {
+    background-color: var(--fourth-book-background);
+    color: var(--fourth-book-color);
+}
+
+#fourth-book:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+#fifth-book {
+    background-color: var(--fifth-book-background);
+    color: var(--fifth-book-color);
+}
+
+#fifth-book:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
