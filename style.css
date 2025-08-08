@@ -25,12 +25,25 @@ body {
 }
 
 h1, p, div {
+    text-align: left;
+}
+
+.int {
+    width: 700px;
     text-align: center;
 }
 
 a {
     text-decoration: none;
     color: var(--skoob-color);
+}
+
+.buy {
+    
+}
+
+p {
+    margin: 10px;
 }
 
 div {
@@ -48,6 +61,8 @@ div {
     flex-direction: column;
     align-items: center;
 }
+
+.content {}
 
 #first-book {
     background-color: var(--first-book-background);
