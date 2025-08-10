@@ -2,10 +2,11 @@
 
 :root {
     --first-color: #161616;
+    --second-color: #253942;
     --skoob-color: #036EC0;
     --background-color: #F8F9D3;
     --first-book-background: #3C778E;
-    --first-book-color: #F6DAAB;
+    --first-book-color: #FFDDA2;
     --second-book-background: #942113;
     --second-book-color: #E2EFDD;
     --third-book-background: #000000;
@@ -25,12 +26,13 @@ body {
 }
 
 h1, p, div {
-    text-align: left;
+    text-align: center;
 }
 
 .int {
-    width: 700px;
+    color: var(--second-color);
     text-align: center;
+    width: 700px;
 }
 
 a {
@@ -39,21 +41,20 @@ a {
 }
 
 .buy {
-    
-}
-
-p {
-    margin: 10px;
+    color: var(--background-color);
 }
 
 div {
     border-radius: 8px;
-    width: 700px;
+    max-width: 1000px;
+    width: 800px;
     margin: 15px;
     display: grid;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -62,12 +63,16 @@ div {
     align-items: center;
 }
 
-.content {}
-
 #first-book {
     background-color: var(--first-book-background);
     color: var(--first-book-color);
 }
+
+/* #first-book h2,
+#first-book h3,
+#first-book p {
+    text-shadow: 2px 2px 4px rgba(158, 88, 88, 0.7);
+} */
 
 #first-book:hover {
     cursor: pointer;
