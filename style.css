@@ -63,6 +63,17 @@ div {
     align-items: center;
 }
 
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.extra-info {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 #first-book {
     background-color: var(--first-book-background);
     color: var(--first-book-color);
